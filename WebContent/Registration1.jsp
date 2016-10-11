@@ -97,7 +97,7 @@ text-align:right;
 <td>1.</td>
 <td> 
 <% out.print(li.STUDENT_NAME());%>
-</td> <td><input type="text" name="StudentName" placeholder="Enter Your name" autocomplete ></td>
+</td> <td><input type="text" name="StudentName" placeholder=<%out.print(li.STUDENT_NAME()); %> autocomplete ></td>
 <td>Photo Graph</td> <td> <input type="file" accept="image/*" onchange="loadFile(event)"> </td>
 <td>
 <img id="output" width="100" height="100"/></td>
